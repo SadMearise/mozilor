@@ -35,6 +35,26 @@ export function sliderSlick() {
 			slidesToShow: 4,
 			speed: 300,
 			infinite: false,
+			responsive: [
+				{
+					breakpoint: 1150,
+					settings: {
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 850,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 550,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
 		});
 	  });
 }

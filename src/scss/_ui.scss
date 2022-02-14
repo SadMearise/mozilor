@@ -68,23 +68,16 @@
 	z-index: 100;
 	background-color: $colorRed;
 	border-radius: 6px;
-	padding: 15px 30.24px;
+	padding: 14px 32px;
 	display: inline-block;
-	font-weight: bold;
 	font-size: 16px;
 	line-height: 150%;
 	color: $colorWhite;
+	letter-spacing: 0.005em;
 	transition: all 0.3s ease 0s;
 	&:hover {
 		background-color: rgb(160, 20, 39);
 	}
-	// @media (max-width: $breakpoint768) {
-	// 	padding: 0px 0px 0px 0px;
-	// 	background: none;
-	// 	&:hover {
-	// 		background: none;
-	// 	}
-	// }
 }
 
 .svg-logo-dims {
@@ -98,13 +91,13 @@
 	z-index: 100;
 	border: 1px solid $colorRed;
 	border-radius: 6px;
-	padding: 15px 30.24px;
-	font-weight: bold;
+	padding: 13px 31px;
 	font-size: 16px;
 	line-height: 150%;
 	display: inline-block;
 	color: $colorRed;
 	transition: all 0.3s ease 0s;
+	
 	&:hover {
 		background-color: $colorRed;
 		color: $colorWhite;
@@ -112,31 +105,11 @@
 }
 
 .svg-main-screen-dims {
-	width: 100%;
 	height: auto;
-	@media (max-width: 1200px) {
-		max-width: 700px;
-	}
+	width: 100%;
+	
 }
 
-.title {
-	font-weight: bold;
-	font-size: 48px;
-	line-height: calc(62 / 48 * 100%);
-	color: $colorBlue;
-	@media (max-width: $breakpoint992) {
-		font-size: 36px;
-	}
-}
-
-.text {
-	font-size: 22px;
-	line-height: calc(33 / 22 * 100%);
-	color: $colorText;
-	@media (max-width: $breakpoint992) {
-		font-size: 16px;
-	}
-}
 
 ._icon-Decathlon {
 	font-size: 40px;
@@ -157,6 +130,9 @@
 	span {
 		color: $colorRed;
 	}
+	@media (max-width: $breakpoint768) {
+		font-size: 28px;
+	}
 }
 
 .title-product {
@@ -164,6 +140,9 @@
 	font-size: 44px;
 	line-height: calc(57 / 44 * 100%);
 	color: $colorBlue;
+	@media (max-width: $breakpoint768) {
+		font-size: 32px;
+	}
 }
 
 .text-product {
@@ -185,5 +164,62 @@
 	margin: 0px 0px 28px 0px;
 	@media (max-width: $breakpoint992) {
 		margin: 0px 0px 16px 0px;
+	}
+}
+
+.list {
+	&__title {
+		font-weight: bold;
+		color: $colorWhite;
+		font-size: 18px;
+		line-height: 24px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__list {
+		li {
+			margin: 0px 0px 20px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+
+	&__link {
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: $colorRed;
+		}
+		
+	}
+
+	&__social {
+	}
+}
+
+.text-footer {
+	color: $colorWhite;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.social {
+	display: flex;
+	&__item {
+		transition: color 0.3s ease 0s;
+		margin: 0px 15px 0px 0px;
+		color: $colorWhite;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		&:hover {
+			color: $colorRed;
+		}
+	}
+}
+
+.underline {
+	&:hover {
+		text-decoration: underline;
 	}
 }

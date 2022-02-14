@@ -72,9 +72,10 @@ body {
 @import "header";
 @import "footer";
 @import "slider";
+@import "icons";
 @import "MainPage/brands";
 @import "MainPage/products";
-@import "MainPage/intro";
+@import "intro";
 @import "MainPage/successes";
 @import "MainPage/innovation";
 
@@ -88,5 +89,5 @@ body {
 }
 
 .page {
-	
+	flex: 1 1 auto;
 }

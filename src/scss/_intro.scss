@@ -1,0 +1,92 @@
+.intro {
+	position: relative;
+	padding: 129px 0px 210px 0px;
+	@media (max-width: $breakpoint1400) {
+		padding: 100px 0px;
+	}
+	@media (max-width: $breakpoint992) {
+		padding: 50px 0 275px 0;
+	}
+	@media (max-width: $breakpoint480) {
+		padding: 35px 0 250px 0;
+	}
+	&__image {
+		position: absolute;
+		bottom: 0;
+		right: 10px;
+		@media (max-width: $breakpoint1400) {
+			max-width: 600px;
+			right: 0;
+		}
+
+		@media (max-width: $breakpoint992) {
+			max-width: 400px;
+			right: 0;
+		}
+		@media (max-width: $breakpoint768) {
+			max-width: 320px;
+		}
+		
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__body {
+		flex: 0 1 50%;
+		padding: 0px 10px 0px 0px;
+		@media (max-width: $breakpoint992) {
+			flex: 1 1 100%;
+		}
+		@media (max-width: $breakpoint768) {
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin: 0px 0px 32px 0px;
+		font-weight: bold;
+		font-size: 48px;
+		line-height: calc(62 / 48 * 100%);
+		color: $colorBlue;
+		@media (max-width: $breakpoint992) {
+			font-size: 36px;
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__text {
+		margin: 0px 0px 40px 0px;
+		font-size: 22px;
+		line-height: calc(33 / 22 * 100%);
+		color: $colorText;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 25px 0px;
+			font-size: 16px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	&__button-row {
+		display: flex;
+		@media (max-width: $breakpoint768) {
+			flex-direction: column;
+		}
+	}
+
+	&__button-one {
+		margin: 0px 16px 0px 0px;
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	&__button-two {
+	}
+}
