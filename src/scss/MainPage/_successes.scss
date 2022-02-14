@@ -1,0 +1,51 @@
+.block-successes {
+	padding: 73px 0px;
+	@media (max-width: $breakpoint768) {
+		padding: 33px 0px;
+	}
+	&__row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: $breakpoint768) {
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		flex: 1 1 50%;
+	}
+
+	&__body {
+		padding: 0px 120px 0px 0px;
+		text-align: left;
+		@media (max-width: $breakpoint768) {
+			padding: 0px 0px 0px 0px;
+		}
+	}
+
+	&__title {
+		margin: 0px 0px 16px 0px;
+		@media (max-width: $breakpoint992) {
+			font-size: 32px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 8px 0px;
+		}
+	}
+
+	&__text {
+		@media (max-width: $breakpoint992) {
+			font-size: 14px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+
+	&__btn {
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+}

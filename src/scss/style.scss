@@ -1,0 +1,92 @@
+// Библиотеки
+@use "sass:math";
+
+// Подключаемые шрифты
+@import url(//db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
+@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
+@import "fonts";
+
+// Шрифт по умолчанию
+$fontfamily: "Europa";
+$fontfamilyBold: "Europa-Bold";
+
+// Переменные
+$containerWidth: 1108;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1400: 1399.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint480: 479.98 + px;
+$colorBlue: #1a2578;
+$colorRed: #bf0830;
+$colorText: #484c63;
+$colorBlock: #3a3a3c;
+$colorCategory: #8f90a6;
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+
+// Обнуление, общие параметры
+@import "null";
+@import "mixins";
+
+// Оболочка
+body {
+  font-family: "Europa";
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+// Основная сетка
+._container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    max-width: 750px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
+}
+
+// Подключение файлов/стилей/страниц и элементов
+
+@import "ui";
+@import "header";
+@import "footer";
+@import "slider";
+@import "MainPage/brands";
+@import "MainPage/products";
+@import "MainPage/intro";
+@import "MainPage/successes";
+@import "MainPage/innovation";
+
+// Основной блок
+.main-screen {
+	
+}
+
+._gradient {
+	background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+}
+
+.page {
+	
+}

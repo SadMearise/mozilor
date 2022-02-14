@@ -1,0 +1,189 @@
+.ibg{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	img {
+		display: none;
+	}
+}
+
+// .ibg{
+// 	position: relative;
+// 	img {
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 100%;
+// 		top: 0;
+// 		left: 0;
+// 		object-fit: cover;
+// 	}
+// }
+
+.icon-menu {
+	@media (max-width: $breakpoint768) {
+		position: absolute;
+		width: 30px;
+		height: 24px;
+		top: 20px;
+		right: 20px;
+		transition: all 0.3s ease 0s;
+		span {
+			position: absolute;
+			top: calc(50% - 1.5px);
+			left: 0;
+			width: 100%;
+			height: 3.25px;
+			background-color: $colorBlue;
+			border-radius: 2px;
+			transition: all 0.3s ease 0s;
+			&:first-child {
+				top: 0;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0;
+			}
+		}
+		&._active {
+			span {
+				background-color: $colorWhite;
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1.625px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1.625px);
+				}
+			}
+		}
+	}
+}
+
+
+
+.btn {
+	position: relative;
+	z-index: 100;
+	background-color: $colorRed;
+	border-radius: 6px;
+	padding: 15px 30.24px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 150%;
+	color: $colorWhite;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: rgb(160, 20, 39);
+	}
+	// @media (max-width: $breakpoint768) {
+	// 	padding: 0px 0px 0px 0px;
+	// 	background: none;
+	// 	&:hover {
+	// 		background: none;
+	// 	}
+	// }
+}
+
+.svg-logo-dims {
+	@media (max-width: $breakpoint992) {
+		max-width: 150px;
+	}
+}
+
+.btn2 {
+	position: relative;
+	z-index: 100;
+	border: 1px solid $colorRed;
+	border-radius: 6px;
+	padding: 15px 30.24px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 150%;
+	display: inline-block;
+	color: $colorRed;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: $colorRed;
+		color: $colorWhite;
+	}
+}
+
+.svg-main-screen-dims {
+	width: 100%;
+	height: auto;
+	@media (max-width: 1200px) {
+		max-width: 700px;
+	}
+}
+
+.title {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: calc(62 / 48 * 100%);
+	color: $colorBlue;
+	@media (max-width: $breakpoint992) {
+		font-size: 36px;
+	}
+}
+
+.text {
+	font-size: 22px;
+	line-height: calc(33 / 22 * 100%);
+	color: $colorText;
+	@media (max-width: $breakpoint992) {
+		font-size: 16px;
+	}
+}
+
+._icon-Decathlon {
+	font-size: 40px;
+	&:hover {
+		._icon-Decathlon {
+			color: red;
+			background-color: red;
+		}
+		
+	}
+}
+
+.brands-text {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: calc(57 / 36 * 100%);
+	color: $colorBlue;
+	span {
+		color: $colorRed;
+	}
+}
+
+.title-product {
+	font-weight: bold;
+	font-size: 44px;
+	line-height: calc(57 / 44 * 100%);
+	color: $colorBlue;
+}
+
+.text-product {
+	font-size: 16px;
+	line-height: calc(27 / 16 * 100%);
+	color: $colorText;
+}
+
+.svg-awards-dims {
+	
+}
+
+.right-image {
+	width: 100%;
+	height: auto;
+}
+
+.pp {
+	margin: 0px 0px 28px 0px;
+	@media (max-width: $breakpoint992) {
+		margin: 0px 0px 16px 0px;
+	}
+}

@@ -1,0 +1,35 @@
+.brands {
+	padding: 126px 0px 128px 0px;
+	border: 1px solid rgba(197, 203, 226, 0.5);
+	@media (max-width: $breakpoint992) {
+		padding: 86px 0px 88px 0px;
+	}
+	@media (max-width: $breakpoint768) {
+		padding: 46px 0px 48px 0px;
+	}
+	&__text {
+		text-align: center;
+		margin: 0px 0px 80px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 50px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0px 30px;
+		@media (max-width: $breakpoint992) {
+			flex-wrap: wrap;
+			gap: 40px;
+			justify-content: center;
+		}
+	}
+
+	&__item {
+	}
+}

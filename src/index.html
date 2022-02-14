@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+	"title": "Home Page"
+})
+<body>
+	<div class="wrapper">
+		<div class="main-screen _gradient">
+			@@include('html/header.html', {})
+			@@include('html/MainPage/intro.html', {})
+		</div>
+		<main class="page">
+			@@include('html/MainPage/brands.html', {})
+			@@include('html/MainPage/products.html', {})
+			@@include('html/MainPage/awards.html', {})
+			@@include('html/MainPage/innovation.html', {})
+			@@include('html/MainPage/team.html', {})
+			
+		</main>
+		@@include('html/footer.html', {})
+	</div>
+	@@include('_js.html', {})
+</body>
+
+</html>

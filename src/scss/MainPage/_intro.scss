@@ -1,0 +1,101 @@
+.intro {
+	position: relative;
+	padding: 73px 0px 0px 0px;
+	@media (max-width: $breakpoint992) {
+		padding: 53px 0px 0px 0px;
+	}
+	@media (max-width: $breakpoint768) {
+		padding: 33px 0px 0px 0px;
+	}
+	&__row {
+		display: flex;
+		@media (max-width: $breakpoint768) {
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		&:first-child {
+			padding: 56px 40px 0px 0px;
+		}
+		&:last-child {
+			margin: 0px 0px 0px -150px;
+		}
+		@media (max-width: $breakpoint992) {
+			&:first-child {
+				padding: 36px 40px 0px 0px;
+			}
+		}
+		@media (max-width: $breakpoint768) {
+			&:first-child {
+				padding: 0px 0px 0px 0px;
+				margin: 0px 0px 330px 0px;
+			}
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+		@media (max-width: 550px) {
+			&:first-child {
+				margin: 0px 0px 195px 0px;
+			}
+		}
+		@media (max-width: $breakpoint480) {
+			&:first-child {
+				margin: 0px 0px 140px 0px;
+			}
+		}
+	}
+
+	&__body {
+		@media (max-width: $breakpoint768) {
+			text-align: center;
+		}
+	}
+
+	&__button-row {
+		display: flex;
+		margin: 0px 0px 210px 0px;
+		@media (max-width: $breakpoint768) {
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+
+	&__title {
+		margin: 0px 0px 32px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__text {
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 25px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	&__button-one {
+		margin: 0px 16px 0px 0px;
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	&__button-two {
+	}
+
+	&__image {
+		position: absolute;
+		bottom: 0;
+	}
+}
