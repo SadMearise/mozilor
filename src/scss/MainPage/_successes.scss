@@ -44,3 +44,15 @@
 		}
 	}
 }
+
+.right-image {
+	width: 100%;
+	height: auto;
+}
+
+.pp {
+	margin: 0px 0px 28px 0px;
+	@media (max-width: $breakpoint992) {
+		margin: 0px 0px 16px 0px;
+	}
+}

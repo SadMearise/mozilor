@@ -89,6 +89,9 @@
 	&__icon {
 	}
 }
-.svg-logo-dims {
-}
 
+.svg-logo-dims {
+	@media (max-width: $breakpoint992) {
+		max-width: 150px;
+	}
+}

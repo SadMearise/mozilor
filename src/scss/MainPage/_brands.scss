@@ -33,3 +33,14 @@
 	&__item {
 	}
 }
+
+._icon-Decathlon {
+	font-size: 40px;
+	&:hover {
+		._icon-Decathlon {
+			color: red;
+			background-color: red;
+		}
+		
+	}
+}

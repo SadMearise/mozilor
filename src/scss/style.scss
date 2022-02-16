@@ -78,6 +78,8 @@ body {
 @import "intro";
 @import "MainPage/successes";
 @import "MainPage/innovation";
+@import "ProductsPage/partners";
+@import "ProductsPage/about";
 
 // Основной блок
 .main-screen {
@@ -87,7 +89,133 @@ body {
 ._gradient {
 	background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
 }
+.reverse_gradient {
+	background: linear-gradient(0deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+}
 
 .page {
 	flex: 1 1 auto;
+}
+
+.icon-menu {
+	@media (max-width: $breakpoint768) {
+		position: absolute;
+		width: 30px;
+		height: 24px;
+		top: 20px;
+		right: 20px;
+		transition: all 0.3s ease 0s;
+		span {
+			position: absolute;
+			top: calc(50% - 1.5px);
+			left: 0;
+			width: 100%;
+			height: 3.25px;
+			background-color: $colorBlue;
+			border-radius: 2px;
+			transition: all 0.3s ease 0s;
+			&:first-child {
+				top: 0;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0;
+			}
+		}
+		&._active {
+			span {
+				background-color: $colorWhite;
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1.625px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1.625px);
+				}
+			}
+		}
+	}
+}
+
+.list {
+	&__title {
+		font-weight: bold;
+		color: $colorWhite;
+		font-size: 18px;
+		line-height: 24px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__list {
+		li {
+			margin: 0px 0px 20px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+
+	&__link {
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: $colorRed;
+		}
+		
+	}
+
+	&__social {
+	}
+}
+
+.social {
+	display: flex;
+	&__item {
+		transition: color 0.3s ease 0s;
+		margin: 0px 15px 0px 0px;
+		color: $colorWhite;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		&:hover {
+			color: $colorRed;
+		}
+	}
+}
+
+.item {
+	&__title-image {
+		margin: 0 0 32px 0;
+		@media (max-width: $breakpoint768) {
+			text-align: center;
+		}
+	}
+
+	&__text {
+		margin: 0px 0px 42px 0px;
+		p {
+			margin: 0px 0px 34px 0px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+		@media (max-width: $breakpoint768) {
+			text-align: justify;
+			margin: 0px 0px 20px 0px;
+			p {
+				margin: 0px 0px 28px 0px;
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		@media (max-width: $breakpoint480) {
+			display: flex;
+			justify-content: center;
+		}
+	}
 }
