@@ -17,9 +17,11 @@
 	}
 
 	&_normal {
-		.partners__column {
-			&:first-child {
-				margin: 0px 20px 0px 0px;
+		@media (min-width: $breakpoint768) {
+			.partners__column {
+				&:first-child {
+					margin: 0px 20px 0px 0px;
+				}
 			}
 		}
 	}
