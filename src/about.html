@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+	"title": "About"
+})
+<body>
+	<div class="wrapper">
+		<div class="main-screen _gradient">
+			@@include('html/header.html', {})
+			@@include('html/AboutPage/intro.html', {})
+		</div>
+		<main class="page">
+			@@include('html/AboutPage/brands.html', {})
+			@@include('html/AboutPage/who-we-are.html', {})
+			@@include('html/AboutPage/what-we-do.html', {})
+			@@include('html/AboutPage/join.html', {})
+		</main>
+		@@include('html/footer.html', {})
+	</div>
+	@@include('_js.html', {})
+</body>
+
+</html>

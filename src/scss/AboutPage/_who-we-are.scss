@@ -1,0 +1,25 @@
+.who-we-are {
+	padding: 0px 0px 50px 0px;
+	&__header {
+		padding: 65px 0px 97px 0px;
+		@media (max-width: $breakpoint992) {
+			padding: 45px 0px 67px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			padding: 35px 0px 47px 0px;
+		}
+	}
+
+	&__center {
+		margin: 0px 0px 97px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 67px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 47px 0px;
+		}
+	}
+
+	&__footer {
+	}
+}
