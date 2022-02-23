@@ -84,6 +84,10 @@ body {
 @import "AboutPage/what-we-do";
 @import "AboutPage/who-we-are";
 @import "AboutPage/join";
+@import "CareerPage/offer";
+@import "CareerPage/life";
+@import "CareerPage/about-us";
+@import "CareerPage/vacancy";
 
 // Основной блок
 .main-screen {
@@ -98,6 +102,9 @@ body {
 }
 ._all-page-gradient {
 	background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+}
+._all-page-gradient2 {
+	background: linear-gradient(270.76deg, #E3E7F6 -55.5%, rgba(227, 231, 246, 0) 145.36%);
 }
 
 .page {
@@ -244,7 +251,7 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		gap: 18px;
+		gap: 36px;
 	}
 
 	&__item {
@@ -256,10 +263,19 @@ body {
 		padding: 40px;
 		@media (max-width: $breakpoint992) {
 			padding: 25px;
-			flex: 0 0 48%;
+			flex: 0 0 47%;
 		}
 		@media (max-width: $breakpoint768) {
 			flex: 1 1 50%;
+		}
+	}
+
+	&__header-row {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 32px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 16px 0px;
 		}
 	}
 }
@@ -270,13 +286,16 @@ body {
 		font-size: 28px;
 		line-height: calc(31 / 28 * 100%);
 		color: $colorBlock;
-		margin: 0px 0px 32px 0px;
 	}
 
 	&__text {
 		font-size: 16px;
 		line-height: calc(27 / 16 * 100%);
 		color: $colorText;
+	}
+
+	&__image {
+		margin: 0 10px 0 0;
 	}
 }
 
@@ -335,3 +354,124 @@ body {
 	}
 }
 
+.about-b {
+	&__title {
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 15px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__text {
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 30px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
+	&__button-row {
+		display: flex;
+		justify-content: center;
+		@media (max-width: $breakpoint480) {
+			flex-direction: column;
+		}
+	}
+
+	&__button-one {
+		margin: 0px 20px 0px 0px;
+		@media (max-width: $breakpoint480) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	&__button-two {
+	}
+}
+
+.item-dev {
+	display: flex;
+	justify-content: space-between;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 17px 35px rgba(22, 23, 72, 0.05);
+	border-radius: 8px;
+	margin: 0px 0px 30px 0px;
+	padding: 35px 60px;
+	@media (max-width: $breakpoint768) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	@media (max-width: $breakpoint480) {
+		padding: 25px 40px;
+	}
+	&:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+	&__column {
+		&:first-child {
+			max-width: 806px;
+		}
+		&:last-child {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__title {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: calc(27 / 28 * 100%);
+		color: $colorText;
+		margin: 0px 0px 24px 0px;
+		@media (max-width: $breakpoint768) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		@media (max-width: $breakpoint768) {
+			justify-content: center;
+			align-items: center;
+			margin: 0px 0px 16px 0px;
+		}
+	}
+
+	&__graphic {
+		display: flex;
+		margin: 0px 28px 0px 0px;
+		@media (max-width: $breakpoint480) {
+			margin: 0px 14px 0px 0px;
+		}
+	}
+
+	&__icon {
+		margin: 0px 6px 0px 0px;
+		@media (max-width: $breakpoint480) {
+			margin: 0px 4px 0px 0px;
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: calc(27 / 20 * 100%);
+		color: $colorCategory;
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	&__location {
+		display: flex;
+	}
+
+	&__button-one {
+	}
+}

@@ -33,6 +33,10 @@
 		}
 	}
 
+	&__career-body {
+		padding: 100px 0px 0px 0px;
+	}
+
 	&__title {
 		margin: 0px 0px 32px 0px;
 		font-weight: bold;
@@ -45,6 +49,15 @@
 		}
 		@media (max-width: $breakpoint768) {
 			margin: 0px 0px 10px 0px;
+		}
+		p {
+			&:first-child {
+				margin: 0px 0px 10px 0px;
+			}
+			&:last-child {
+				font-weight: normal;
+				color: $colorRed;
+			}
 		}
 	}
 
@@ -77,6 +90,10 @@
 	}
 
 	&__button-two {
+		@media (max-width: $breakpoint480) {
+			display: flex;
+			justify-content: center;
+		}
 	}
 
 	&__mainpage-padding {
@@ -112,6 +129,16 @@
 		}
 		@media (max-width: $breakpoint768) {
 			padding: 60px 0px 300px 0px;
+		}
+	}
+
+	&__career-padding {
+		padding: 78px 0px 228px 0px;
+		@media (max-width: $breakpoint992) {
+			padding: 39px 0px 328px 0px;	
+		}
+		@media (max-width: $breakpoint480) {
+			padding: 25px 0px 280px 0px;	
 		}
 	}
 
@@ -173,5 +200,28 @@
 	}
 	@media (max-width: $breakpoint768) {
 		width: 300px;
+	}
+}
+
+.career-main-screen {
+	position: absolute;
+	bottom: 0;
+	right: -130px;
+	@media (max-width: 1400px) {
+		width: 700px;
+		right: -50px;
+	}
+	@media (max-width: 1200px) {
+		right: -30px;
+	}
+	@media (max-width: 1100px) {
+		right: 0;
+		width: 600px;
+	}
+	@media (max-width: $breakpoint768) {
+		width: 400px;
+	}
+	@media (max-width: $breakpoint480) {
+		width: 330px;
 	}
 }
