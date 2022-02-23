@@ -1,0 +1,73 @@
+.form {
+	padding: 114px 0px 138px 0px;
+	@media (max-width: $breakpoint992) {
+		padding: 60px 0px 70px 0px;
+	}
+	&__row {
+		@media (min-width: $breakpoint992) {
+			display: flex;
+			gap: 122px;
+		}
+	}
+
+	&__column {
+		flex: 0 1 50%;
+	}
+
+	&__contacts {
+	}
+
+	&__items {
+		padding: 116px 0px 0px 0px;
+		@media (max-width: $breakpoint992) {
+			display: flex;
+			gap: 30px;
+			justify-content: space-between;
+			padding: 70px 0px 0px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		margin: 0px 0px 72px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 25px 0px;
+		@media (max-width: $breakpoint992) {
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $breakpoint768) {
+			justify-content: center;
+		}
+	}
+
+	&__image {
+		margin: 0px 20px 0px 0px;
+	}
+
+	&__location {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 150%;
+		letter-spacing: 0.005em;
+		color: $colorBlack;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.005em;
+		color: $colorBlack;
+		max-width: 273px;
+	}
+}

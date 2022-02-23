@@ -1,0 +1,62 @@
+.contact-form {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	&__label {
+		display: flex;
+		flex-direction: column;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.005em;
+		color: $colorCategory;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__input {
+		background-color: $colorWhite;
+		border: 1px solid #E3E7F6;
+		border-radius: 6px;
+		padding: 10px 15px;
+		margin: 6px 0px 0px 0px;
+		min-height: 60px;
+		height: 100%;
+		&:focus {
+			outline: 1px solid $colorCategory;
+		}
+		@media (min-width: $breakpoint768) {
+			min-width: 443px;
+			width: 100%;
+		}
+	}
+
+	&__textarea {
+		background-color: $colorWhite;
+		border: 1px solid #E3E7F6;
+		border-radius: 6px;
+		padding: 10px 15px;
+		margin: 6px 0px 0px 0px;
+		resize: none;
+		min-height: 148px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		&:focus {
+			outline: 1px solid $colorCategory;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		@media (min-width: $breakpoint480) {
+			max-width: 101px;
+		}
+	}
+}
