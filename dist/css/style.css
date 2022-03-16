@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(//db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
-@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
+@import url(https://db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
+@import url(https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
 @font-face {
   font-family: europa;
   font-display: swap;
@@ -89,6 +89,12 @@ body {
 }
 body.lock {
   overflow: hidden;
+}
+
+.svg-Decathlon-dims {
+  position: abosolute;
+  width: 100px;
+  height: auto;
 }
 
 .wrapper {
@@ -1624,7 +1630,7 @@ body.lock {
   flex: 0 1 50%;
 }
 .form__items {
-  padding: 116px 0px 0px 0px;
+  padding: 132px 0px 0px 0px;
 }
 @media (max-width: 991.98px) {
   .form__items {
@@ -1828,13 +1834,15 @@ body.lock {
 .social {
   display: flex;
 }
+.social li {
+  margin: 0px 15px 0px 0px;
+}
+.social li:last-child {
+  margin: 0px 0px 0px 0px;
+}
 .social__item {
   transition: color 0.3s ease 0s;
-  margin: 0px 15px 0px 0px;
   color: #ffffff;
-}
-.social__item:last-child {
-  margin: 0px 0px 0px 0px;
 }
 .social__item:hover {
   color: #bf0830;

@@ -4,7 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
+	<link rel="stylesheet" href="/path/to/my.css" media="print" onload="this.media='all'">
+	<noscript>
+		<link rel="stylesheet" href="/path/to/my.css" media="screen">
+	</noscript>
+	
 	<title>About</title> 
 </head>
 <body>
@@ -237,10 +242,10 @@
 						<div class="footer__item list">
 							<div class="list__title">Follow us</div>
 							<ul class="list__social social">
-								<a href="" class="social__item _icon-facebook"></a>
-								<a href="" class="social__item _icon-twitter"></a>
-								<a href="" class="social__item _icon-instagram"></a>
-								<a href="" class="social__item _icon-Linkedin-1"></a>
+								<li><a href="#" class="social__item _icon-facebook"></a></li>
+								<li><a href="#" class="social__item _icon-twitter"></a></li>
+								<li><a href="#" class="social__item _icon-instagram"></a></li>
+								<li><a href="#" class="social__item _icon-Linkedin-1"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -259,6 +264,7 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/app.min.js"></script>
+<script src="js/lazysizes.min.js" async></script>
 </body>
 
 </html>

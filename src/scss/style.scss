@@ -2,8 +2,8 @@
 @use "sass:math";
 
 // Подключаемые шрифты
-@import url(//db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
-@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
+@import url(https://db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
+@import url(https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
 @import "fonts";
 
 // Шрифт по умолчанию
@@ -37,7 +37,11 @@ body {
     overflow: hidden;
   }
 }
-
+.svg-Decathlon-dims {
+	position: abosolute;
+	width: 100px;
+	height:  auto;
+}
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -187,13 +191,15 @@ body {
 
 .social {
 	display: flex;
-	&__item {
-		transition: color 0.3s ease 0s;
+	li {
 		margin: 0px 15px 0px 0px;
-		color: $colorWhite;
 		&:last-child {
 			margin: 0px 0px 0px 0px;
 		}
+	}
+	&__item {
+		transition: color 0.3s ease 0s;
+		color: $colorWhite;
 		&:hover {
 			color: $colorRed;
 		}
